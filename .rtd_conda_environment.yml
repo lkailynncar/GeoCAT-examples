@@ -3,9 +3,8 @@ channels:
   - ncar
 dependencies:
   - python=3.7.6=h357f687_2
-  - geocat-comp
-  - geocat-datafiles
-  - geocat-viz
+  - geocat-comp=0.1a=py37h035aef0_4
+  - geocat-datafiles=0.2=py_0
   - geos=3.8.0=he1b5a44_0
   - proj=6.3.0=hc80f0dc_0
   - pip=20.0.2=py37_0
@@ -19,3 +18,4 @@ dependencies:
     - cmaps
     - mock
     - pillow
+    - git+https://github.com/ncar/geocat-viz
