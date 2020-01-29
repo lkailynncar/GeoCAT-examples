@@ -2,11 +2,11 @@ channels:
   - conda-forge
   - ncar
 dependencies:
-  - python=3
+  - python=3.7.6=h357f687_2
   - geocat-comp
   - geocat-datafiles
   - geocat-viz
-  - pip
+  - pip=20.0.2=py37_0
   - pip:
     - sphinx
     - sphinx_rtd_theme
