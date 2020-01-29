@@ -6,6 +6,8 @@ dependencies:
   - geocat-comp
   - geocat-datafiles
   - geocat-viz
+  - geos
+  - proj
   - pip=20.0.2=py37_0
   - pip:
     - sphinx
