@@ -6,12 +6,12 @@ dependencies:
   - geocat-comp
   - geocat-datafiles
   - geocat-viz
-  - netcdf4
-  - cartopy
   - pip
   - pip:
     - sphinx
     - sphinx_rtd_theme
+    - netcdf4
+    - cartopy
     - matplotlib
     - sphinx-gallery
     - cmaps
