@@ -6,8 +6,8 @@ dependencies:
   - geocat-comp
   - geocat-datafiles
   - geocat-viz
-  - geos
-  - proj
+  - geos=3.8.0=he1b5a44_0
+  - proj=6.3.0=hc80f0dc_0
   - pip=20.0.2=py37_0
   - pip:
     - sphinx
