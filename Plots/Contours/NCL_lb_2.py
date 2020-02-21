@@ -1,7 +1,14 @@
 """
-lb_2
+NCL_lb_2.py
 ===============
-Plots/Contours/Lines
+Concepts illustrated:
+  - Making the labelbar be vertical
+  - Changing the labelbar labels
+  - Setting color maps using the new standard
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/lb_2.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/labelbar.shtml#ex2
 """
 
 ###############################################################################

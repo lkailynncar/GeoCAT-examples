@@ -1,14 +1,15 @@
 """
-vector_4
+NCL_vector_4.py
 ========
-
-Plot U & V vectors globally, colored according to temperature
-
-https://www.ncl.ucar.edu/Applications/Scripts/vector_4.ncl
-
 Concepts illustrated:
   - Coloring vectors based on temperature data
   - Changing the scale of the vectors on the plot
+
+Plot U & V vectors globally, colored according to temperature
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/vector_4.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/vector.shtml#ex4
 """
 
 ###############################################################################

@@ -1,12 +1,10 @@
 """
 NCL_overlay_11a.py
 ==================
-
 Concepts illustrated:
-
-- Overlaying vectors and filled contours on a map
-- Masking out particular areas in a map
-- Subsetting a color map
+  - Overlaying vectors and filled contours on a map
+  - Masking out particular areas in a map
+  - Subsetting a color map
 
 This script shows how to overlay contours and vectors on a map,
 but with the contours limited to specific areas, and the vectors
@@ -30,13 +28,14 @@ b. You can "clip" a plot object with a geographical boundary.
 
 This example demonstrates approach (a).
 
-This script is based on the NCL script originally written by
+This script is based on the NCL script http://www.ncl.ucar.edu/Applications/Scripts/overlay_11.ncl originally written by
 Yang Zhao (CAMS) (Chinese Academy of Meteorological Sciences).
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/overlay.shtml#ex11
 """
 
 ###############################################################################
 # Basic Imports
-# -------------
 
 import xarray as xr
 import numpy as np
@@ -58,7 +57,6 @@ from cartopy.mpl.ticker import LongitudeFormatter, LatitudeFormatter
 
 ###############################################################################
 # Read U,V,T from the data at 500hPa
-# ----------------------------------
 #
 # Here, we read the sample dataset with Xarray and select the ``time=0`` slice
 # and the ``lev=500`` hPa level.
@@ -78,7 +76,6 @@ clevs = np.arange(228, 273, 4, dtype=float)
 
 ###############################################################################
 # Create a subselection of the color map
-# --------------------------------------
 #
 # We create a new color map that is a subselection of an existing color map
 
@@ -88,7 +85,6 @@ cmap = gcv.util.truncate_colormap(cmaps.BkBlAqGrYeOrReViWh200,
 
 ###############################################################################
 # Define the map projection
-# -------------------------
 #
 # This allows Cartopy to transform ``lat`` and ``lon`` values accurately into
 # points on the matplotlib plot canvas.
@@ -97,7 +93,6 @@ crs = PlateCarree()
 
 ###############################################################################
 # Construct shape boundaries
-# --------------------------
 #
 # Using Cartopy's interface to the Natural Earth Collection of shapefiles
 # and geographical shape data, we construct the geographical boundaries
@@ -149,7 +144,6 @@ provinces = ShapelyFeature(province_geos,
 
 ###############################################################################
 # Plot
-# ----
 
 # Create the figure and the Cartopy GeoAxes object
 fig = plt.figure(figsize=(12,12))

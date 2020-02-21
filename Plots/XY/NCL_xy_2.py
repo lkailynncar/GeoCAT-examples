@@ -1,14 +1,17 @@
 """
 NCL_xy_2.py
 ===============
-This script illustrates the following concepts:
+Concepts illustrated:
    - Drawing an XY plot with multiple curves
    - Changing the line color for multiple curves in an XY plot
    - Changing the line thickness for multiple curves in an XY plot
    - Drawing XY plot curves with both lines and markers
    - Changing the default markers in an XY plot
    - Making all curves in an XY plot solid.
-See https://www.ncl.ucar.edu/Applications/xy.shtml for further information.
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/xy_2.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/xy.shtml#ex2
 """
 
 ###############################################################################

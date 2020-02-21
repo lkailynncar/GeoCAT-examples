@@ -1,9 +1,6 @@
 """
-vector_1
+NCL_vector_1.py
 ========
-
-Plot U & V vector over SST
-
 Concepts illustrated:
   - Overlaying vectors and filled contours on a map
   - Changing the scale of the vectors on the plot
@@ -11,7 +8,11 @@ Concepts illustrated:
   - Setting the color for vectors
   - Increasing the thickness of vectors
 
-https://www.ncl.ucar.edu/Applications/Scripts/vector_1.ncl
+Plot U & V vector over SST
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/vector_1.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/vector.shtml#ex1
 """
 
 ###############################################################################

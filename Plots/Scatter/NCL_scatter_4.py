@@ -1,8 +1,18 @@
 """
+NCL_scatter_4.py
 ==========
-scatter_4
-==========
-Plots/Scatter/Lines
+Concepts illustrated:
+  - Drawing a scatter plot with a regression line
+  - Drawing a time series plot
+  - Calculating the least squared regression for a one dimensional array
+  - Smoothing data so that seasonal cycle is less prominent
+  - Changing the markers in an XY plot
+  - Changing the marker color in an XY plot
+  - Changing the marker size in an XY plot
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/scatter_4.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/scatter.shtml#ex4
 """
 
 ################################################################################

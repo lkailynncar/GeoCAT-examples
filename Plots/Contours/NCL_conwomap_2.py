@@ -1,11 +1,14 @@
 """
 NCL_conwomap_2.py
 ===============
-This script illustrates the following concepts:
+Concepts illustrated:
    - Drawing a simple filled contour plot
    - Selecting a different color map
    - Changing the size/shape of a contour plot using viewport resources
-See https://www.ncl.ucar.edu/Applications/Scripts/conwomap_2.ncl for further information.
+
+This Python script reproduces the NCL plot script found here: https://www.ncl.ucar.edu/Applications/Scripts/conwomap_2.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/conwomap.shtml#ex2
 """
 
 ###############################################################################

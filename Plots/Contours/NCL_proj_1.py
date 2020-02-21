@@ -1,7 +1,16 @@
 """
-proj_1_lg
+NCL_proj_1.py
 ===============
-Plots/Contours/Lines
+Concepts illustrated:
+  - Drawing filled contours over a Mollweide map
+  - Setting the spacing for latitude/longitude grid lines
+  - Changing the font size of the labelbar's labels
+  - Spanning part of a color map for contour fill
+  - Turning off the map perimeter (boundary)
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/proj_1.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/proj.shtml#ex1
 """
 
 ###############################################################################

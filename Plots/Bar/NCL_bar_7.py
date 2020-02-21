@@ -10,6 +10,8 @@ Concepts illustrated:
   - Drawing a custom legend
 
 This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/bar_7.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/bar.shtml#ex7
 """
 
 ###############################################################################

@@ -1,7 +1,16 @@
 """
-leg_1.py
+NCL_leg_1.py
 ===============
-Plots/Lines/Legends
+Concepts illustrated:
+  - Drawing a legend inside an XY plot
+  - Changing the width and height of a legend
+  - Turning off the perimeter around a legend
+  - Changing the font size of legend labels
+  - Customizing the labels in a legend
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/leg_1.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/legend.shtml#ex1
 """
 
 ###############################################################################

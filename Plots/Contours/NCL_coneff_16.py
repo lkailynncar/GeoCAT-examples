@@ -1,8 +1,14 @@
 """
+NCL_coneff_16.py
 =========
-coneff_16
-=========
-Plots/Contours/Filled/Georeferenced
+Concepts illustrated:
+  - Showing features of the new color display model
+  - Using cnFillPalette to assign a color palette to contours
+  - Drawing partially transparent filled contours
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/coneff_16.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/coneff.shtml#ex16
 """
 
 import numpy as np

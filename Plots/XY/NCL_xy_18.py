@@ -2,22 +2,23 @@
 NCL_xy_18.py
 ============
 Concepts illustrated:
+  - Filling the area between two curves in an XY plot
+  - Labeling the bottom X axis with years
+  - Drawing a main title on three separate lines
+  - Calculating a weighted average
+  - Changing the size/shape of an XY plot using viewport resources
+  - Manually creating a legend
+  - Overlaying XY plots on each other
+  - Maximizing plots after they've been created
 
-- Filling the area between two curves in an XY plot
-- Labeling the bottom X axis with years
-- Drawing a main title on three separate lines
-- Calculating a weighted average
-- Changing the size/shape of an XY plot using viewport resources
-- Manually creating a legend
-- Overlaying XY plots on each other
-- Maximizing plots after they've been created
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/xy_18.ncl
 
-See the [original NCL example](https://www.ncl.ucar.edu/Applications/Scripts/xy_18.ncl)
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/xy.shtml#ex18
 """
 
 ###############################################################################
 # Basic Imports
-# -------------
+
 import numpy as np
 import xarray as xr
 import pandas as pd
@@ -26,7 +27,6 @@ import matplotlib.ticker as tic
 
 ###############################################################################
 # Open files and read in monthly data
-# -----------------------------------
 #
 # Xarray's ``open_mfdataset`` (open multi-file dataset) method will attempt to
 # merge all of the individual datasets (i.e., NetCDF files) into one single
@@ -100,7 +100,6 @@ gds = gds.expand_dims(dim={'lon': nds.lon})
 
 ###############################################################################
 # OBSERVATIONS
-# ------------
 #
 # Read in the observational data from an ASCII (text) file.  Here, we use
 # Numpy's nice ``loadtxt`` method to read the data from the text file and
@@ -115,7 +114,6 @@ obs = xr.DataArray(name='TREFHT', data=obs_data, coords=[('time', obs_time)])
 
 ###############################################################################
 # NCL-based Weighted Mean Function
-# --------------------------------
 #
 # We define this function just for convenience.  This is equivalent to how
 # NCL computes the weighted mean.
@@ -125,7 +123,6 @@ def horizontal_weighted_mean(var, wgts):
 
 ###############################################################################
 # NATURAL DATA
-# ------------
 #
 # We compute the weighted mean across the latitude and longitude dimensions
 # (leaving only the ``case`` and ``time`` dimensions), and then we compute the
@@ -136,7 +133,6 @@ gavan = gavn - gavn.sel(time=slice('1890','1920')).mean(dim='time')
 
 ###############################################################################
 # NATURAL + ANTHROPOGENIC DATA
-# ----------------------------
 #
 # We do the same thing for the "natural + anthropogenic" data.
 
@@ -145,7 +141,6 @@ gavav = gavv - gavv.sel(time=slice('1890','1920')).mean(dim='time')
 
 ###############################################################################
 # OBSERVATION DATA
-# ----------------
 #
 # We do the same thing for the observation data.
 
@@ -153,7 +148,6 @@ obs_avg = obs.sel(time=slice('1890','1999')) - obs.sel(time=slice('1890','1920')
 
 ###############################################################################
 # Calculate the ensemble MIN & MAX & MEAN
-# ---------------------------------------
 #
 # Here we find the ``min``, ``max``, and ``mean`` along the ``case`` (i.e.,
 # ensemble) dimension (leaving only the ``time`` dimension) for both of our
@@ -169,7 +163,6 @@ gavav_avg = gavav.mean(dim='case')
 
 ###############################################################################
 # Create the Plot
-# ---------------
 
 fig, ax = plt.subplots(figsize=(10.5, 6))
 

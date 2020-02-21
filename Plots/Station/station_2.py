@@ -1,11 +1,20 @@
 """
-station_2
+NCL_station_2.py
 =========
+Concepts illustrated:
+  - Drawing markers on a map indicating the locations of station data
+  - Generating dummy data using "random_uniform"
+  - Drawing markers of different sizes and colors on a map
+  - Drawing a custom legend outside of a map plot
+  - Attaching a custom labelbar to a plot
 
 Plot random data on US, colored according to value
 
-https://www.ncl.ucar.edu/Applications/Scripts/station_2.ncl
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/station_2.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/station.shtml#ex2
 """
+
 ###################################################
 # Import necessary packages
 import numpy as np

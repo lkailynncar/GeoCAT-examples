@@ -1,19 +1,21 @@
 """
 NCL_polyg_4.py
 ==============
- Concepts illustrated:
-   - Drawing a cylindrical equidistant map
-   - Zooming in on a particular area on a cylindrical equidistant map
-   - Attaching an outlined box to a map plot
-   - Attaching filled polygons to a map plot
-   - Filling in polygons with a shaded pattern
-   - Changing the color and thickness of polylines
-   - Changing the color of a filled polygon
-   - Labeling the lines in a polyline
-   - Changing the density of a fill pattern
-   - Adding text to a plot
+Concepts illustrated:
+  - Drawing a cylindrical equidistant map
+  - Zooming in on a particular area on a cylindrical equidistant map
+  - Attaching an outlined box to a map plot
+  - Attaching filled polygons to a map plot
+  - Filling in polygons with a shaded pattern
+  - Changing the color and thickness of polylines
+  - Changing the color of a filled polygon
+  - Labeling the lines in a polyline
+  - Changing the density of a fill pattern
+  - Adding text to a plot
 
 This Python script reproduces the NCL plot script found here: https://www.ncl.ucar.edu/Applications/Scripts/polyg_4.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/polyg.shtml#ex4
 """
 
 ###############################################################################

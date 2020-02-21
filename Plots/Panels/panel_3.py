@@ -1,21 +1,18 @@
 """
-panel_3.py
+NCL_panel_3.py
 ===============
+Concepts illustrated:
+  - Paneling plots vertically on a page ``plt.subplots``
+  - Adding a common title to paneled plots ``matplotlib.Figure.suptitle``
+  - Adding a common labelbar (or colorbar) to paneled plots ``matplotlib.Figure.colorbar``
+  - Subsetting a color map
+
 Two panel image with shared colorbar and title
 
-NCL docs: https://www.ncl.ucar.edu/Applications/panel.shtml
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/panel_3.ncl
 
-NCL script: https://www.ncl.ucar.edu/Applications/Scripts/panel_3.ncl
-
-NCL output: https://www.ncl.ucar.edu/Applications/Images/panel_3_lg.png
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/panel.shtml#ex3
 """
-
-###############################################################################
-# Concepts illustrated:
-#   - Paneling plots vertically on a page ``plt.subplots``
-#   - Adding a common title to paneled plots ``matplotlib.Figure.suptitle``
-#   - Adding a common labelbar (or colorbar) to paneled plots ``matplotlib.Figure.colorbar``
-#   - Subsetting a color map
 
 ###############################################################################
 # Lets read the netCDF dataset using xarray and choose the second timestamp.

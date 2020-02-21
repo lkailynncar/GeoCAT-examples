@@ -1,16 +1,22 @@
 """
-xy_7_2_lg.py
+NCL_xy_7_2_lg.py
 ===============
+Concepts illustrated:
+  - Drawing an XY plot with two different Y axes
+  - Changing the title on the Y axis
+  - Changing the line dash pattern in an XY plot
+  - Changing the line color for multiple curves in an XY plot
+  - Setting the mininum/maximum value of the Y axis in an XY plot
+
 An example of a double y plot: two separate line with their own unique axis.
 
-- Original NCL script: https://www.ncl.ucar.edu/Applications/Scripts/xy_7.ncl
-- https://www.ncl.ucar.edu/Applications/Images/xy_7_2_lg.png
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/xy_7.ncl
 
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/xy.shtml#ex7
 """
 
 ###############################################################################
 # Import modules
-# ===============
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -20,7 +26,6 @@ from geocat.viz.util import nclize_axis
 
 ################################################################################
 # Open data file and extract a slice of the data
-# ===============================================
 
 dset = xr.open_dataset(geocat.datafiles.get("netcdf_files/TestData.xy3.nc"))
 ds = dset.isel(case=0, time=slice(0, 36))
@@ -28,7 +33,6 @@ ds = dset.isel(case=0, time=slice(0, 36))
 
 ################################################################################
 # Create XY plot with two different Y axes
-# =========================================
 
 
 fig, ax1 = plt.subplots(figsize=(12, 8))

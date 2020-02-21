@@ -1,9 +1,15 @@
 """
 NCL_tm_2.py
 ===============
-Tickmark and Axis Manipulation example
+Concepts illustrated:
+  - Explicitly setting tickmarks and labels on the bottom X axis
+  - Setting the spacing for tickmarks
+  - Setting the mininum/maximum value of the Y axis in an XY plot
+  - Changing the width and height of a plot
 
 This Python script reproduces the NCL plot script found here: https://www.ncl.ucar.edu/Applications/Scripts/tm_2.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/tickmarks.shtml#ex2
 """
 
 

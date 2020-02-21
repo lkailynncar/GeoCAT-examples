@@ -1,7 +1,7 @@
 """
 NCL_conLev_4.py
 ===============
-This script illustrates the following concepts:
+Concepts illustrated:
    - Explicitly setting contour levels
    - Explicitly setting the fill colors for contours
    - Reordering an array
@@ -11,7 +11,10 @@ This script illustrates the following concepts:
    - Turning off contour lines
    - Turning off map fill
    - Turning on map outlines
-See https://www.ncl.ucar.edu/Applications/Scripts/conLev_4.ncl for further information.
+
+This Python script reproduces the NCL plot script found here: https://www.ncl.ucar.edu/Applications/Scripts/conLev_4.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/contourLev.shtml#ex4
 """
 
 ###############################################################################

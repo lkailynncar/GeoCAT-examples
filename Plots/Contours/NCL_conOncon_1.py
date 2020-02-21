@@ -1,8 +1,16 @@
 """
+NCL_conOncon_1.py
 ==========
-conOncon_1
-==========
-Plots/Contours/Lines
+Concepts illustrated:
+  - Drawing pressure/height contours on top of another set of contours
+  - Drawing negative contour lines as dashed lines
+  - Drawing the zero contour line thicker
+  - Changing the color of a contour line
+  - Overlaying dashed contours on solid line contours
+
+This Python script reproduces the NCL plot script found here:  https://www.ncl.ucar.edu/Applications/Scripts/conOncon_1.ncl
+
+The NCL graphics and description for this script are found here: https://www.ncl.ucar.edu/Applications/conOncon.shtml#ex1
 """
 
 ################################################################################
